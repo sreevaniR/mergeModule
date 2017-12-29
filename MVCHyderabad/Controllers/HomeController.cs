@@ -16,6 +16,16 @@ namespace MVCHyderabad.Controllers
             return View(ed);
         }
 
+        public ActionResult Display(string id)
+        {
+            TempData["value1"] = id;
+            TempData.Keep("value1");
+            return View();
+        }
 
+        public ActionResult Thanku()
+        {
+            return View();
+        }
     }
 }

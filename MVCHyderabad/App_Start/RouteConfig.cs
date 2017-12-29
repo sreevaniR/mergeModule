@@ -15,8 +15,8 @@ namespace MVCHyderabad
 
             routes.MapRoute(
                 name: "Default",
-                url: "{controller}/{action}/{FirstName}/{SecondName}/{DeptName}",
-                defaults: new { controller = "Home", action = "Index", FirstName = UrlParameter.Optional, SecondName = UrlParameter.Optional, DeptName = UrlParameter.Optional }
+                url: "{controller}/{action}/{id}",
+                defaults: new { controller = "Home", action = "Index",id = UrlParameter.Optional }
             );
         }
     }
